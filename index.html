@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia PowerFit</title>
-    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia PowerFit</title>
+  <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('Imagens/imgfundo.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh; /* define 100 da altura da janela.*/
+    }
+    .conteudo {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-  
-    
-   
+
+  <!-- Menu de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--menu nav fundo escuro-->
+    <div class="container">
+      <a class="navbar-brand" href="#">PowerFit</a> <!--navbar-brand nome empresa ouprojeto-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span><!-- classe usada para criar botao de menu responsivo(vira 3 linhas quando a pagina é recolhida)-->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav"><!--para agrupar e ocultar conteúdo -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="cadastro.html">Seja nosso aluno</a></li>
+           </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteudo com breve descrição -->
+  <div class="container conteudo text-center">
+    <h1 class="mb-4">Academia PowerFit</h1>
+    <p>Seu bem-estar começa aqui.</p>
+
+    <!-- Imagens -->
+    <div class="row mt-4">
+      <div class="col-md-4"><img src="Imagens/img1.jpg" class="img-fluid rounded" alt="Imagem 1"></div>
+      <div class="col-md-4"><img src="imagens/img2.jpg"  class="img-fluid rounded" alt="Imagem 2"></div>
+      <div class="col-md-4"><img src="imagens/img3.jpg" class="img-fluid rounded" alt="Imagem 3"></div>
+    </div>
+  </div>
+
+  <!-- Scripts Bootstrap -->
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
