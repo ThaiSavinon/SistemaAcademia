@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image: url('Imagens/imgtelaLogin.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+        .login-container {
+            margin-top: 80px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .card {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container login-container">
+        <h2 class="text-center mb-4">LOGIN ALUNO</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Login</label>
+                                <input type="text" class="form-control" id="username" placeholder="Digite seu usuário" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="password" placeholder="Digite sua senha" required />
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" id="btnEntrar" class="btn btn-outline-primary w-100">Entrar</button>
+                            </div>
+                            <div class="mb-3">
+                                <a href="index.html" class="btn btn-outline-primary w-100">Sair</a> <!--volta ao menu inicial-->
+
+                            </div>
+                            <div class="text-center">
+                                <a href="cadastro.html">Novo? Cadastre-se</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!--simulando ação do botao ENTRAR-->
+  <script>
+    document.getElementById("btnEntrar").addEventListener("click", function () {
+      location.href = "agendarAula.html";
+    });
+  </script>
+  
+      
+</body>
+</html>

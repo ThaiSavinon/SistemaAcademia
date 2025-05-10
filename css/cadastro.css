@@ -1,0 +1,39 @@
+body {
+    background-image: url('../img/imgtelaLogin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro-container {
+    background-color: rgba(255, 193, 7, 0.9); /* Amarelo com transparência */
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.form-area {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco levemente transparente */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-control {
+    background-color: #ffffcc;
+}
+
+.btn-enviar {
+    background-color: #cccc00;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-sair {
+    background-color: #cc0000;
+    color: white;
+    font-weight: bold;
+}
