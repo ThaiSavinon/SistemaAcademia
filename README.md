@@ -4,7 +4,7 @@ Projeto de melhoria na experiência dos usuários da academia.
 ## Status do projeto: (Em desenvolvimento) 
 
 ## Objetivos do software 📝 
-Sistema busca melhorar as operações da academia, proporcionando maior eficiência na gestão dos membros. Realiza agendamento de aulas e permite o acompanhamento do progresso dos alunos, oferecendo uma experiência completa aos usuários. 
+Sistema busca melhorar as operações da academia, proporcionando maior eficiência na gestão dos membros. Realiza agendamento de aulas e cadastro para novos alunos de forma rápida e simples.
 
 ## Tecnologias que serão aplicadas 💻 
 
@@ -18,8 +18,8 @@ Sistema busca melhorar as operações da academia, proporcionando maior eficiên
 Thaiana Rodrigues 
 
 ## Funcionalidades do sistema (Requisitos) ✅ 
-- Registro de membros 
+- Login para alunos
 - Agendamento de aulas 
-- Acompanhar progressos 
+- Cadastro de novos alunos 
 
  
