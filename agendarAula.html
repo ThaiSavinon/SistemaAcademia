@@ -1,0 +1,41 @@
+     <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento Aluno</title>
+  <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/agendamento.css" rel="stylesheet" />
+  
+</head>
+<body>
+
+  <div class="form-container">
+    <h3>AGENDAMENTO ALUNOS</h3>
+    <p class="text-center">Para agendar uma aula com o instrutor, insira os dados abaixo:</p>
+    
+    <form th:action="@{/agendamento/agendarAula}" method="post" th:object="${agendamento}">
+  <div class="mb-3">
+    <label for="nome" class="form-label">Nome:</label>
+    <input type="text" class="form-control" id="nome" th:field="*{nome}" required>
+  </div>
+  <div class="mb-3">
+    <label for="data" class="form-label">Data:</label>
+    <input type="date" class="form-control" id="data" th:field="*{data}" required>
+  </div>
+  <div class="mb-3">
+    <label for="hora" class="form-label">Hora:</label>
+    <input type="time" class="form-control" id="hora" th:field="*{hora}" required>
+  </div>
+
+  <div class="btn-container">
+    <button type="submit" class="btn btn-success">AGENDAR</button>
+    <button type="button" class="btn btn-danger" id="btnVoltar">VOLTAR</button>
+  </div>
+</form>
+  </div>
+
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/agendamento.js"></script>
+  
+</body>
+</html>

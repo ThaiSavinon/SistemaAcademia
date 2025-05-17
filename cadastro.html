@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro Alunos</title>
+  <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/cadastro.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="cadastro-container">
+  <h4 class="text-center mb-3 fw-bold" style="color: black;">Cadastro Alunos</h4>
+  <div class="form-area">
+    <p class="fw-bold">
+      Venha treinar conosco. Digite as informações solicitadas abaixo que entraremos em contato.
+    </p>
+
+    <form th:action="@{/cadastrar}" th:object="${cadastro}" method="post">
+      <div class="mb-2">
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="text" th:field="*{nome}" class="form-control" id="nome" required>
+      </div>
+
+      <div class="mb-2">
+        <label for="telefone" class="form-label">Telefone para contato:</label>
+        <input type="text" th:field="*{telefone}" class="form-control" id="telefone" required>
+      </div>
+
+      <div class="mb-2">
+        <label for="cpf" class="form-label">CPF:</label>
+        <input type="text" th:field="*{cpf}" class="form-control" id="cpf" required>
+      </div>
+
+      <div class="mb-2">
+        <label for="idade" class="form-label">Idade:</label>
+        <input type="number" th:field="*{idade}" class="form-control" id="idade" required>
+      </div>
+
+      <div class="mb-2">
+        <label for="endereco" class="form-label">Endereço:</label>
+        <input type="text" th:field="*{endereco}" class="form-control" id="endereco" required>
+      </div>
+
+      <div class="mb-2">
+        <label for="metas" class="form-label">Metas:</label>
+        <input type="text" th:field="*{metas}" class="form-control" id="metas" placeholder="Objetivo" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="historicoSaude" class="form-label">Histórico de saúde:</label>
+        <input type="text" th:field="*{historicoSaude}" class="form-control" id="historicoSaude" required>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-enviar">ENVIAR</button>
+        <a href="/loginAluno" class="btn btn-sair">SAIR</a>
+      </div>
+    </form>
+
+    <div th:if="${mensagem}" class="alert alert-success mt-3" th:text="${mensagem}"></div>
+  </div>
+</div>
+
+<script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/js/cadastro.js"></script>
+
+</body>
+</html>

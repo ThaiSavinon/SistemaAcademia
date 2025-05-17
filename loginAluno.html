@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/loginAluno.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <div class="container login-container">
+        <h2 class="text-center mb-4">LOGIN ALUNO</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form th:action="@{/loginAluno}" method="post">
+                            <div class="mb-3">
+                                <label for="login" class="form-label">Login</label>
+                                <input type="text" class="form-control" id="login" name="login" placeholder="Digite seu usuário" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="senha" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required />
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-outline-primary w-100">Entrar</button>
+                            </div>
+                            <div class="mb-3">
+                                <a href="/" class="btn btn-outline-secondary w-100">Sair</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/loginAluno.js"></script>
+</body>
+</html>
