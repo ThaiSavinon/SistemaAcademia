@@ -18,14 +18,10 @@ Sistema busca melhorar as operações da academia, proporcionando maior eficiên
 Thaiana Rodrigues 
 
 ## Funcionalidades do sistema (Requisitos) ✅ 
-<<<<<<< HEAD
+
 - Registro de membros 
 - Agendamento de aulas 
-- Acompanhar progressos 
-=======
-- Login para alunos
-- Agendamento de aulas 
 - Cadastro de novos alunos 
->>>>>>> 2cdb70c94195ee8d04feaed55e0ad83eb644e5e0
+
 
  
